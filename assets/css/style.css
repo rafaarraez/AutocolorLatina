@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Ubuntu:400,700&display=swap');
+html {
+    background: #f6f6f6;
+    font-family: 'Ubuntu', sans-serif;      
+    font-size: 0.99em;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    color: #666;
+    font-weight: 400;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  body {
+    background: #fff;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;  
+    font-weight: 400;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 25px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow-x: hidden;
+  }
+
 .navbar-light{
     background:  #ffff00;
     color: #000;
@@ -11,9 +38,35 @@
     color: #000;
 }
 
+.nav-categ{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background: #d9d9e9;
+    width: 100%;
+    padding: 2%;
+}
 
-section {
+.nav-item-cat{
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+.section-padding {
     padding: 60px 0;
+}
+
+.section-padding-less {
+    padding: 30px 0;
+}
+
+.margin{
+    margin: 2rem auto;
 }
 
 .section-title {
@@ -51,12 +104,8 @@ section {
     margin-left: -30px;
 }
 
-.ection-title-left {
-    margin-left: 20%;
-}
-
 .margin-left{
-    margin-left: 12%;
+    margin-left: 11%;
 }
 
 .section-title-left h1{
@@ -71,6 +120,36 @@ section {
     width:42%;
     height: 2px;
     background-color: #000;
+}
+
+.section-title-us h1{
+    font-weight: bold;
+}
+
+.section-title-us::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width:35%;
+    height: 2px;
+    background-color: #000;
+}
+
+.section-title-us::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -15px;
+    width: 23%;
+    height: 2px;
+    background-color: #000;
+}
+
+.texto{
+    margin-top: 1.5rem;
+    font-weight: 600;
+    text-align: justify;
 }
 
 
@@ -161,7 +240,6 @@ section .section-title {
     height: auto;
     padding: 5%;
 }
-
 .img-worker{
     max-width: 100%;
     margin-top: 5%;
@@ -170,6 +248,11 @@ section .section-title {
 .img-worker img{
     width: 100%;
     
+}
+
+.text-barra{
+    padding: 5%;
+    font-weight: 600;
 }
 
 .form-control-franja{
@@ -217,8 +300,24 @@ section .section-title {
     margin-left: 40%;
 }
 
+.map {
+    top: 50px;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 
 #footer {
+    padding: 60px 0;
     background: linear-gradient(to right, #973674, #363674);
 }
 
@@ -282,4 +381,128 @@ label {
     padding-bottom: 0px;
     margin-bottom: 10px;
     }
+    .contact img {
+        width: 60%;
+        margin-left: 20%;
+    }
+    .numbers .num {
+        margin-top: 5%;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+
+#login .container #login-row #login-column #login-box {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    max-width: 600px;
+    height: 320px;
+    border: 1px solid #9C9C9C;
+    background-color: #EAEAEA;
+  }
+  #login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+  }
+  #login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+  }
+
+
+/* --- POST -- */
+.post{
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.post article .titulo{
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.post article .titulo a{
+    color: #000;
+}
+
+.post article .fecha{
+    color: #747474;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.post article .thumb{
+    margin-bottom: 20px;
+}
+
+.post article .thumb img{
+    vertical-align: top;
+    width: 100%;
+}
+
+.post article .extracto{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.post article .continuar{
+    color: #f5871f;
+    font-weight: bold;
+}
+
+
+/*-- Formulario -- */
+.formulario{
+    width: 100%;
+    overflow: hidden;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario textarea{
+    border: 1px solid #a8a8a8;
+    border-radius: 2px;
+    padding: 16px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #141938;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario input[type="password"]:focus,
+.formulario textarea:focus{
+    border: 2px solid #595959;
+    padding: 15px;
+}
+
+.formulario textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 300px;
+}
+
+.formulario input[type="submit"]{
+    padding: 15px;
+    background: #595959;
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2px;
+    border: none;
+    float: right;
+    cursor: pointer;
+}  
+
+.formulario input[type="submit"]:hover{
+    background: #f5871f;
 }

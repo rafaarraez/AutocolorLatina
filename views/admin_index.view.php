@@ -1,92 +1,49 @@
-<?php require 'views/header.php'; ?>
-
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="<?php echo RUTA ?>/src/img/dsc01115-recorte-miguel-zaragoza.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="<?php echo RUTA ?>/src/img/dsc01115-recorte-miguel-zaragoza.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="<?php echo RUTA ?>/src/img/dsc01115-recorte-miguel-zaragoza.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+<?php require '../views/header.php'; ?>
 
 <section class="section-padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="section-title-header text-center">
-          <h1 class="section-title">Nuestra Marcas Líderes</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title-header text-center">
+                    <h1 class="section-title">Seccion de Administrador</h1>
+                </div>
+            </div>
         </div>
-      </div>
-
-
-      <div class="col-12 row section-padding-us">
-
-        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
-          <div class="card-marca">
-            <img src="<?php echo RUTA ?>/src/img/marcas/3m-1.png" alt="">
-          </div>
-        </div>
-
-        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
-          <div class="card-marca">
-            <img src="<?php echo RUTA ?>/src/img/marcas/axalta-1.png" alt="">
-          </div>
-        </div>
-
-        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
-          <div class="card-marca">
-            <img src="<?php echo RUTA ?>/src/img/marcas/norton-1.png" alt="">
-          </div>
-        </div>
-
-      </div>
-
-
-
-
     </div>
 </section>
 
+<nav class="nav nav-pills nav-fill nav-categ">
+    <a class="nav-item nav-link nav-item-cat" href="#">ABRASIVOS</a>
+    <a class="nav-item nav-link nav-item-cat" href="#">SELLADORES Y RECUBRIMIENTOS</a>
+    <a class="nav-item nav-link nav-item-cat" href="#">MISCELANEOS</a>
+    <a class="nav-item nav-link nav-item-cat" href="#">HERRAMIENTAS Y EQUIPOS</a>
+    <a class="nav-item nav-link nav-item-cat" href="#">ADHESIVOS</a>
+    <a class="nav-item nav-link nav-item-cat" href="#">REVESTIMIENTOS</a>
+    <a class="btn btn-success" href="<?php echo RUTA ?>/admin/nuevo.php">NUEVO PRODUCTO</a>
+    <a class="btn btn-danger" href="<?php echo RUTA ?>/admin/cerrar.php">Cerrar Sesion</a>
+</nav>
+
 <section class="section-padding">
-  <div class="container">
-    <div class="row">
+    <div class="container">
+        <div class="row">
 
-      <center>
-        <div class="container">
+            <center>
+                <div class="container">
+                    <div class="row">
+                        <?php foreach ($products as $product) : ?>
+                            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6 ">
+                                <div class="card-producto">
+                                    <img src="<?php echo RUTA; ?>/src/img/<?php echo $product['product_thumb']; ?>" alt="">
+                                    <p><?php echo $product['product_name']?></p>
+                                    <div class="btn-modal">
+                                        <a href="edit.php?product_id=<?php echo $product['product_id']; ?>" class="btn btn-success">Editar</a>
+                                        <a href="delete.php?product_id=<?php echo $product['product_id']; ?>" class="btn btn-danger">Eliminar</a>
+                                    </div>
 
-          <div class="row">
-            <?php foreach ($products as $product) : ?>
-              <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6 ">
-                <div class="card-producto">
-                  <a href="#">
-                    <img src="<?php echo RUTA; ?>/src/img/<?php echo $product['product_thumb']; ?>" alt="">
-                    <p><?php echo $product['product_name'] ?></p>
-                    <div class="btn-modal">
-                      <i class="far fa-eye"></i>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            <?php endforeach; ?>
-            <!-- <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                        <!-- <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
                             <div class="card-producto">
                                 <img src="<?php echo RUTA ?>/src/img/productos/3mtm-ppstm-type-h-o-mini-large-pressure-cup-16121-16124.jpg" alt="">
                                 <div class="btn-modal">
@@ -241,21 +198,23 @@
                             </div>
                         </div> -->
 
-          </div>
+                    </div>
+
+                </div>
+            </center>
+
+            <div class="col-12">
+                <div class="section-title-header text-center">
+                    <a href="javascript:;" id="cambia" class="btn btn-common btn-mas" onclick="FbotonOn(this)">MOSTRAR MÁS</a>
+                </div>
+            </div>
 
         </div>
-      </center>
-
-      <div class="col-12">
-        <div class="section-title-header text-center">
-          <a href="javascript:;" id="cambia" class="btn btn-common btn-mas" onclick="FbotonOn(this)">MOSTRAR MÁS</a>
-        </div>
-      </div>
-
     </div>
-  </div>
 </section>
 
 
 
-<?php require 'views/footer.php'; ?>
+
+
+<?php require '../views/footer2.php'; ?>

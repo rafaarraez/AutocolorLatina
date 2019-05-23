@@ -26,6 +26,14 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<nav class="nav nav-pills nav-fill nav-categ">
+  <a class="nav-item nav-link nav-item-cat" href="#">ABRASIVOS</a>
+  <a class="nav-item nav-link nav-item-cat" href="#">SELLADORES Y RECUBRIMIENTOS</a>
+  <a class="nav-item nav-link nav-item-cat" href="#">MISCELANEOS</a>
+  <a class="nav-item nav-link nav-item-cat" href="#">HERRAMIENTAS Y EQUIPOS</a>
+  <a class="nav-item nav-link nav-item-cat" href="#">ADHESIVOS</a>
+  <a class="nav-item nav-link nav-item-cat" href="#">REVESTIMIENTOS</a>
+</nav>
 
 
 <section class="section-padding">
@@ -33,188 +41,192 @@
     <div class="row">
 
       <center>
-        <div class="row">
+        <div class="container">
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6 ">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/highlandtm-masking-tape-2727-06544.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+          <div class="row">
 
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6 ">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/highlandtm-masking-tape-2727-06544.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
+
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/3mtm-ppstm-type-h-o-mini-large-pressure-cup-16121-16124.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/3mtm-ppstm-type-h-o-mini-large-pressure-cup-16121-16124.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
 
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/3m-scotchblok-masking-paper-06718.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/3m-scotchblok-masking-paper-06718.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
 
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/scotch-steel-gray-masking-paper-06518.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/scotch-steel-gray-masking-paper-06518.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/3m-accuspray-air-flow-control-valve-16573-1-per-case.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/3m-accuspray-air-flow-control-valve-16573-1-per-case.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/3m-overspray-masking-liquid-dry-06847-1-gallon.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/3m-overspray-masking-liquid-dry-06847-1-gallon.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/3m-automotive-refinish-masking-tape.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/3m-automotive-refinish-masking-tape.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/06545.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/06545.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6 ">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/highlandtm-masking-tape-2727-06544.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6 ">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/highlandtm-masking-tape-2727-06544.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
 
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/3mtm-ppstm-type-h-o-mini-large-pressure-cup-16121-16124.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/3mtm-ppstm-type-h-o-mini-large-pressure-cup-16121-16124.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
 
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/3m-scotchblok-masking-paper-06718.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/3m-scotchblok-masking-paper-06718.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
 
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/scotch-steel-gray-masking-paper-06518.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/scotch-steel-gray-masking-paper-06518.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/3m-accuspray-air-flow-control-valve-16573-1-per-case.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/3m-accuspray-air-flow-control-valve-16573-1-per-case.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/3m-overspray-masking-liquid-dry-06847-1-gallon.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/3m-overspray-masking-liquid-dry-06847-1-gallon.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/3m-automotive-refinish-masking-tape.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/3m-automotive-refinish-masking-tape.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
-            <div class="card-producto">
-              <a href="#">
-                <img src="<?php echo RUTA ?>/src/img/productos/06545.jpg" alt="">
-                <div class="btn-modal">
-                  <i class="far fa-eye"></i>
-                </div>
-              </a>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6">
+              <div class="card-producto">
+                <a href="#">
+                  <img src="<?php echo RUTA ?>/src/img/productos/06545.jpg" alt="">
+                  <div class="btn-modal">
+                    <i class="far fa-eye"></i>
+                  </div>
+                </a>
+              </div>
             </div>
+
           </div>
 
         </div>

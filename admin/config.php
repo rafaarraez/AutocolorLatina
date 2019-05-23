@@ -1,21 +1,23 @@
 <?php
 
-define('RUTA', 'http://localhost/autocolorlatina/AutocolorLatina/');
+define('RUTA', 'http://localhost/autocolorlatina/AutocolorLatina');
 
-// $bd_config = array(
-//     'basededatos' => 'blog_curso',
-//     'usuario' => 'root',
-//     'pass' => ''
-// );
+$bd_config = array(
+    'basededatos' => 'autocolor',
+    'usuario' => 'root',
+    'pass' => ''
+);
 
-// $blog_config = array(
-//     'post_por_pagina' => '2',
-//     'carpeta_imagenes' => 'img/'
-// );
+$products_config = array(
+    'post_por_pagina' => '9',
+    'carpeta_imagenes' => '/src/img/'
+);
 
-// $blog_admin = array(
-//     'usuario' => 'rafael',
-//     'password' => '123'
-// );
+$blog_admin = array(
+    'usuario' => 'rafael',
+    'password' => '123',
+    'usuario' => 'aja',
+    'password' => '123'
+);
 
 ?>

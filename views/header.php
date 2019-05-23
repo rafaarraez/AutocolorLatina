@@ -28,16 +28,16 @@
                             <a class="nav-link" href="<?php echo RUTA ?>/index.php">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="originals.html">Nosotros</a>
+                            <a class="nav-link" href="<?php echo RUTA ?>/nosotros.php">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo RUTA ?>/products.php">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="prints.html">Nuestras Sedes</a>
+                            <a class="nav-link" href="<?php echo RUTA ?>/sedes.php">Nuestras Sedes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="professionals.html">Contacto</a>
+                            <a class="nav-link" href="#">Contacto</a>
                         </li>
 
                         <li class="nav-item">

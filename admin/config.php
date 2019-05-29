@@ -1,6 +1,6 @@
 <?php
 
-define('RUTA', 'http://localhost/autocolorlatina/AutocolorLatina');
+define('RUTA', 'http://localhost/AutocolorLatina/AutocolorLatina');
 
 $bd_config = array(
     'basededatos' => 'autocolor',
@@ -9,7 +9,7 @@ $bd_config = array(
 );
 
 $products_config = array(
-    'post_por_pagina' => '9',
+    'post_por_pagina' => '16',
     'carpeta_imagenes' => '/src/img/'
 );
 

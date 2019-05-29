@@ -18,23 +18,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $sku = limpiarDatos($_POST['sku']);
     $barcode = limpiarDatos($_POST['barcode']);
     $texto = $_POST['texto'];
+    $id = limpiarDatos($_POST['id']);
     $thumb_guardada = $_POST['thumb-guardada'];
     $thumb = $_FILES['thumb'];
-
 
     if (empty($thumb['name'])) {
         # code...
         $thumb = $thumb_guardada;
     } else {
-        $archivo_subido = '../' . $blog_config['carpeta_imagenes'] . $_FILES['thumb']['name'];
+        $archivo_subido = '../' . $products_config['carpeta_imagenes'] . $_FILES['thumb']['name'];
         move_uploaded_file($_FILES['thumb']['tmp_name'], $archivo_subido);
         $thumb = $_FILES['thumb']['name'];
     }
 
     $statement = $conexion->prepare(
-        'UPDATE products SET product_cat = :product_cat, product_name = :product_name, product_sku = :product_sku, 
-        product_barcode = :product_barcode, product_description = :product_description, thumb = :thumb WHERE id = :id'
+        'UPDATE products SET 
+        product_cat = :product_cat, 
+        product_name = :product_name, 
+        product_sku = :product_sku, 
+        product_barcode = :product_barcode, 
+        product_description = :product_description, 
+        product_thumb = :thumb 
+        WHERE product_id = :id'
     );
+
 
     $statement->execute(array(
         ':product_cat' => $categoria,
@@ -45,6 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         ':thumb' => $thumb,
         ':id' => $id
     ));
+
 
     header('Location: ' . RUTA . '/admin');
 

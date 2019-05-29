@@ -16,8 +16,8 @@
         <!-- Just an image -->
         <nav id="navHome" class="navbar navbar-expand-lg navbar-light sticky-top">
             <div class="container-fluid max-width-940">
-                <a class="navbar-brand" href="index.html">
-                    <img src="<?php echo RUTA ?>/src/img/logo/logop.png" width="200" height="50" alt="">
+                <a class="navbar-brand" href="<?php echo RUTA ?>/index.php">
+                    <img src="<?php echo RUTA ?>/src/img/logo/Logop.png" width="200" height="50" alt="">
                 </a>
                 <button class="navbar-toggler togglerNoBorder" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

@@ -5,9 +5,9 @@ function conexion($bd_config){
         //code...
         $conexion = new PDO('mysql:host=localhost;dbname='.$bd_config['basededatos'], $bd_config['usuario'], $bd_config['pass']);
         return $conexion;
-    } catch (PDOException $e) {
-    //throw $th;
-        return false;
+    }
+    catch(PDOException $e) {
+        echo "Mensaje: " . $e->getMessage() . " ";
     }
 }
 
@@ -25,6 +25,20 @@ function pagina_actual(){
 function obtenerProductos($products_config, $conexion){
     $inicio = (pagina_actual() > 1) ? pagina_actual() * $products_config - $products_config : 0;
     $sentencia = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM products ORDER BY product_id DESC LIMIT $inicio, $products_config");
+    $sentencia->execute();
+    return $sentencia->fetchAll();
+}
+
+function obtenerSliders($products_config, $conexion){
+    $inicio = (pagina_actual() > 1) ? pagina_actual() * $products_config - $products_config : 0;
+    $sentencia = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM slider ORDER BY id DESC LIMIT $inicio, $products_config");
+    $sentencia->execute();
+    return $sentencia->fetchAll();
+}
+
+function obtenerProductosPorCat($products_config, $conexion, $cat){
+    $inicio = (pagina_actual() > 1) ? pagina_actual() * $products_config - $products_config : 0;
+    $sentencia = $conexion->prepare("SELECT * FROM products WHERE product_cat = '$cat' LIMIT $inicio, $products_config");
     $sentencia->execute();
     return $sentencia->fetchAll();
 }

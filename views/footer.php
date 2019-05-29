@@ -17,7 +17,9 @@
                 </div>
             </div>
             <div class="col-md-7 col-lg-7 col-xs-12 derecha" style="padding: 0px;">
-                <p>Buenos precios, variedad de productos y marcas. Muchas opciones de pago y un equipo amistoso experimentado.</p>
+                <div class="text-barra">
+                    <p>Buenos precios, variedad de productos y marcas. Muchas opciones de pago y un equipo amistoso experimentado.</p>
+                </div>
                 <div id="footer" style="padding: 10px;">
                     <form action="">
                         <div class="col-md-12 form-line">

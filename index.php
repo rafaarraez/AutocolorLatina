@@ -3,15 +3,15 @@
 
 require 'admin/config.php';
 
-// require 'functions.php';
+require 'functions.php';
 
-// $conexion = conexion($bd_config);
+$conexion = conexion($bd_config);
 
-// if(!$conexion){
-//     header('Location: error.php');
-// }
+if(!$conexion){
+    echo "No conectado";
+}
 
-// $posts = obtenerPost($blog_config['post_por_pagina'], $conexion);
+$products = obtenerProductos(8, $conexion);
 
 require 'views/index.view.php';
 

@@ -29,7 +29,6 @@
 
 <body>
 
-
     <div class="container-contact100">
         <div class="wrap-contact100">
             <form class="contact100-form validate-form" method="post" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
@@ -39,7 +38,7 @@
                 <input type="hidden" value="<?php echo $post['product_id']; ?>" name="id">
                 <div class="wrap-input100 input100-select">
                     <div>
-                        <span class="label-input100">categoría</span>
+                        <span class="label-input100">Categoría</span>
                         <select class="selection-2" name="categoria">
                             <option selected disabled><?php echo $post['product_cat']; ?></option>
                             <option value="ABRASIVOS">ABRASIVOS</option>

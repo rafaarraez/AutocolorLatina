@@ -8,13 +8,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="<?php echo RUTA ?>/src/img/dsc01115-recorte-miguel-zaragoza.jpg" class="d-block w-100" alt="...">
+      <img src="<?php echo RUTA ?>/src/img/sliders/img1.jpg" class="d-block w-100" alt="img slider">
     </div>
     <div class="carousel-item">
-      <img src="<?php echo RUTA ?>/src/img/dsc01115-recorte-miguel-zaragoza.jpg" class="d-block w-100" alt="...">
+      <img src="<?php echo RUTA ?>/src/img/sliders/img2.jpg" class="d-block w-100" alt="img slider">
     </div>
     <div class="carousel-item">
-      <img src="<?php echo RUTA ?>/src/img/dsc01115-recorte-miguel-zaragoza.jpg" class="d-block w-100" alt="...">
+      <img src="<?php echo RUTA ?>/src/img/sliders/img3.jpg" class="d-block w-100" alt="img slider">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -41,19 +41,19 @@
 
         <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
           <div class="card-marca">
-            <img src="<?php echo RUTA ?>/src/img/marcas/3m-1.png" alt="">
+            <img src="<?php echo RUTA ?>/src/img/marcas/3m.svg" alt="">
           </div>
         </div>
 
         <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
           <div class="card-marca">
-            <img src="<?php echo RUTA ?>/src/img/marcas/axalta-1.png" alt="">
+            <img src="<?php echo RUTA ?>/src/img/marcas/axalta.svg" alt="">
           </div>
         </div>
 
         <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
           <div class="card-marca">
-            <img src="<?php echo RUTA ?>/src/img/marcas/norton-1.png" alt="">
+            <img src="<?php echo RUTA ?>/src/img/marcas/norton.png" alt="">
           </div>
         </div>
 

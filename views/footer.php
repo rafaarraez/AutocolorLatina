@@ -1,4 +1,4 @@
-<section class="section-padding">
+<section id="Contacto" class="section-padding">
 
     <div class="row-fraja">
         <div class="col-12">

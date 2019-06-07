@@ -1,11 +1,11 @@
 <?php
 
-define('RUTA', 'http://localhost/AutocolorLatina/AutocolorLatina');
+define('RUTA', 'http://localhost/AutocolorLatina');
 
 $bd_config = array(
     'basededatos' => 'autocolor',
     'usuario' => 'root',
-    'pass' => ''
+    'pass' => 'rea01g06'
 );
 
 $products_config = array(

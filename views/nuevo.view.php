@@ -37,9 +37,9 @@
                 </span>
                 <div class="wrap-input100 input100-select">
                     <div>
-                        <span class="label-input100">categoría</span>
+                        <span class="label-input100">Categoría</span>
                         <select class="selection-2" name="categoria">
-                            <option selected disabled>categoría de articulo</option>
+                            <option selected disabled>Categoría de articulo</option>
                             <option value="ABRASIVOS">ABRASIVOS</option>
                             <option value="SELLADORES_Y_RECUBRIMIENTOS">SELLADORES Y RECUBRIMIENTOS</option>
                             <option value="MISCELANEOS">MISCELANEOS</option>
@@ -68,9 +68,6 @@
                     <input class="input100" type="text" name="barcode" placeholder="Codigo de barras del Articulo">
                     <span class="focus-input100"></span>
                 </div>
-
-
-
 
                 <div class="wrap-input100 validate-input" data-validate="Message is required">
                     <span class="label-input100">Descripcion del articulo</span>

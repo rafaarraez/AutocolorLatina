@@ -462,3 +462,9 @@ iframe {
 
 
 
+.error{
+  font-size: 15px;
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}

@@ -35,7 +35,7 @@
                     <div class="col-sm-6 col-md-6 col-lg-3 col-xs-6 ">
                         <div class="card-producto">
                             <div class="card-thumb">
-                                <img src="<?php echo RUTA; ?>/src/img/<?php echo $product['product_thumb']; ?>" alt="">
+                                <img src="<?php echo RUTA; ?>/src/img/productos/<?php echo $product['product_thumb']; ?>" alt="">
                                 <p><?php echo $product['product_name'] ?></p>
                             </div>
                             <div class="btn-modal">
@@ -53,7 +53,7 @@
                     <div class="col-12 row section-padding-us">
                       <div class="col-md-6 col-lg-6 col-xs-12">
                         <div class="card-producto">
-                          <img src="<?php echo RUTA; ?>/src/img/<?php echo $product['product_thumb']; ?>" alt="<?php echo $product['product_name'] ?>">
+                          <img src="<?php echo RUTA; ?>/src/img/productos/<?php echo $product['product_thumb']; ?>" alt="<?php echo $product['product_name'] ?>">
                         </div>
                       </div>
                       <div class="col-md-6 col-lg-6 col-xs-12">

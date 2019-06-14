@@ -7,6 +7,8 @@ if(isset($_SESSION['admin'])){
     header('Location: ./admin');
 }
 
+$errores = '';
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $usuario = limpiarDatos($_POST['usuario']);
     $password = limpiarDatos($_POST['password']);
@@ -14,6 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($usuario == $blog_admin['usuario'] && $password == $blog_admin['password']){
         $_SESSION['admin'] = $blog_admin['usuario'];
         header('Location: ' . RUTA . '/admin');
+    }else{
+        $errores .= '<li>Datos Incorrectos</li>';
     }
 }
 

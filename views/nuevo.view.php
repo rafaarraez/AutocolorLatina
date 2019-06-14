@@ -11,15 +11,7 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="../new/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../new/vendor/animate/animate.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../new/vendor/css-hamburgers/hamburgers.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../new/vendor/animsition/css/animsition.min.css">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="../new/vendor/select2/select2.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../new/vendor/daterangepicker/daterangepicker.css">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="../new/css/util.css">
     <link rel="stylesheet" type="text/css" href="../new/css/main.css">
@@ -53,30 +45,24 @@
 
                 <div class="wrap-input100 validate-input" data-validate="Name is required">
                     <span class="label-input100">Nombre</span>
-                    <input class="input100" type="text" name="nombre" placeholder="Nombre del Articulo">
+                    <input class="input100" type="text" name="nombre" placeholder="Nombre del Articulo" required>
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                     <span class="label-input100">SKU del Articulo</span>
-                    <input class="input100" type="text" name="sku" placeholder="SKU del Articulo">
-                    <span class="focus-input100"></span>
-                </div>
-
-                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <span class="label-input100">Codigo de barras del Articulo</span>
-                    <input class="input100" type="text" name="barcode" placeholder="Codigo de barras del Articulo">
+                    <input class="input100" type="text" name="sku" placeholder="SKU del Articulo" required>
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Message is required">
                     <span class="label-input100">Descripcion del articulo</span>
-                    <textarea class="input100" name="texto" placeholder=""></textarea>
+                    <textarea class="input100" name="texto" placeholder="" required></textarea>
                     <span class="focus-input100"></span>
                 </div>
                 <div class="wrap-input100 validate-input" data-validate="Message is required">
                     <span class="label-input100">Imagen del producto</span>
-                    <input type="file" name="thumb">
+                    <input type="file" name="thumb" required>
                     <span class="focus-input100"></span>
                 </div>
 
@@ -92,20 +78,18 @@
                     </div>
                 </div>
 
-                <div class="container-contact100-form-btn">
-                    <div class="wrap-contact100-form-btn">
-                        <div class="contact100-form-bgbtn-back"></div>
-                        <button href="<?php echo RUTA ?>/admin/" class="contact100-form-btn-back">
-                            <span>
-                                <i class="fa fa-long-arrow-left m-l-7" aria-hidden="true"></i>
-                                Volver a productos
-                            </span>
-                        </button>
-                    </div>
-                </div>
-
-
             </form>
+            <div class="container-contact100-form-btn">
+                <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn-back"></div>
+                    <a href="<?php echo RUTA ?>/admin/" class="contact100-form-btn-back">
+                        <span>
+                            <i class="fa fa-long-arrow-left m-l-7" aria-hidden="true"></i>
+                            Volver a productos
+                        </span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -116,7 +100,6 @@
     <!--===============================================================================================-->
     <script src="../new/vendor/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->
-    <script src="../new/vendor/animsition/js/animsition.min.js"></script>
     <!--===============================================================================================-->
     <script src="../new/vendor/bootstrap/js/popper.js"></script>
     <script src="../new/vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -129,10 +112,6 @@
         });
     </script>
     <!--===============================================================================================-->
-    <script src="../new/vendor/daterangepicker/moment.min.js"></script>
-    <script src="../new/vendor/daterangepicker/daterangepicker.js"></script>
-    <!--===============================================================================================-->
-    <script src="../new/vendor/countdowntime/countdowntime.js"></script>
     <!--===============================================================================================-->
     <script src="../new/js/main.js"></script>
 

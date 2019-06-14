@@ -16,7 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $categoria = $_POST['categoria'];
     $nombre = limpiarDatos($_POST['nombre']);
     $sku = limpiarDatos($_POST['sku']);
-    $barcode = limpiarDatos($_POST['barcode']);
     $texto = $_POST['texto'];
     $id = limpiarDatos($_POST['id']);
     $thumb_guardada = $_POST['thumb-guardada'];
@@ -36,7 +35,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         product_cat = :product_cat, 
         product_name = :product_name, 
         product_sku = :product_sku, 
-        product_barcode = :product_barcode, 
         product_description = :product_description, 
         product_thumb = :thumb 
         WHERE product_id = :id'
@@ -47,7 +45,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         ':product_cat' => $categoria,
         ':product_name' => $nombre,
         ':product_sku' => $sku,
-        ':product_barcode' => $barcode,
         ':product_description' => $texto,
         ':thumb' => $thumb,
         ':id' => $id

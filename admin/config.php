@@ -1,23 +1,21 @@
 <?php
 
-define('RUTA', 'http://localhost/AutocolorLatina');
+define('RUTA', 'http://localhost/AutocolorLatina/AutocolorLatina');
 
 $bd_config = array(
     'basededatos' => 'autocolor',
     'usuario' => 'root',
-    'pass' => 'rea01g06'
+    'pass' => ''
 );
 
 $products_config = array(
     'post_por_pagina' => '16',
-    'carpeta_imagenes' => '/src/img/'
+    'carpeta_imagenes' => '/src/img/productos/'
 );
 
 $blog_admin = array(
-    'usuario' => 'rafael',
-    'password' => '123',
-    'usuario' => 'aja',
-    'password' => '123'
+    'usuario' => 'auttocoloradmin',
+    'password' => 'adminAutocolor.',
 );
 
 ?>

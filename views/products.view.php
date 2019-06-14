@@ -29,7 +29,7 @@
             <div class="card-producto">
               <a href="#" data-toggle="modal" data-target=".bd-example-modal-xl-<?php echo $product['product_id'] ?>">
                 <div class="card-thumb">
-                  <img src="<?php echo RUTA; ?>/src/img/<?php echo $product['product_thumb']; ?>" alt="<?php echo $product['product_name'] ?>">
+                  <img src="<?php echo RUTA; ?>/src/img/productos/<?php echo $product['product_thumb']; ?>" alt="<?php echo $product['product_name'] ?>">
                 </div>
                 <div class="btn-modal">
                   <p><?php echo $product['product_name'] ?></p>
@@ -47,7 +47,7 @@
                     <div class="col-12 row section-padding-us">
                       <div class="col-md-6 col-lg-6 col-xs-12">
                         <div class="card-producto">
-                          <img src="<?php echo RUTA; ?>/src/img/<?php echo $product['product_thumb']; ?>" alt="<?php echo $product['product_name'] ?>">
+                          <img src="<?php echo RUTA; ?>/src/img/productos/<?php echo $product['product_thumb']; ?>" alt="<?php echo $product['product_name'] ?>">
                         </div>
                       </div>
                       <div class="col-md-6 col-lg-6 col-xs-12">
@@ -55,8 +55,6 @@
                           <h1><?php echo $product['product_name'] ?></h1>
                           <h6>CODIGO DE PRODUCTO</h6>
                           <p><?php echo $product['product_sku'] ?></p>
-                          <h6>CODIGO DE BARRA</h6>
-                          <p><?php echo $product['product_barcode'] ?></p>
                           <h6>DESCRIPCIÓN DE PRODUCTO</h6>
                           <p><?php echo $product['product_description'] ?></p>
                         </div>

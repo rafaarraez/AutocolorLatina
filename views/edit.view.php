@@ -64,15 +64,6 @@
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <span class="label-input100">Codigo de barras del Articulo</span>
-                    <input class="input100" type="text" name="barcode" value="<?php echo $post['product_barcode']; ?>">
-                    <span class="focus-input100"></span>
-                </div>
-
-
-
-
                 <div class="wrap-input100 validate-input" data-validate="Message is required">
                     <span class="label-input100">Descripcion del articulo</span>
                     <textarea class="input100" name="texto"><?php echo $post['product_description']; ?></textarea>

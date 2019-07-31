@@ -14,8 +14,8 @@ $products_config = array(
 );
 
 $blog_admin = array(
-    'usuario' => 'auttocoloradmin',
-    'password' => 'adminAutocolor.',
+    'usuario' => '',
+    'password' => '',
 );
 
 ?>
